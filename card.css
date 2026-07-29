@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+body {
+  background-color: #f1f5f9;
+}
+
+h1 {
+  color: #2563eb;
+  text-align: center;
+  margin: 15px;
+}
+
+#input_section {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#input_section p {
+  color: #b64343;
+  font-size: 1.5rem;
+  margin-left: 5%;
+}
+
+input {
+  outline: none;
+  background: #fff;
+  border: #2563eb solid 1px;
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: auto;
+  caret-color: #000;
+}
+
+button,
+.edit_a {
+  padding: 10px;
+  color: #fff;
+  width: fit-content;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin-left: 5%;
+}
+
+.Clear {
+  color: #2563eb;
+  background-color: transparent;
+  border: #2563eb 1px solid;
+}
+
+button:hover,
+.edit_a:hover {
+  background: #5579c8;
+  cursor: pointer;
+}
+
+.Clear:hover {
+  background-color: #e8e8e8;
+}
+
+input:focus {
+  border: #f1f5f9 solid 1px;
+  background-color: #9daac57a;
+}
+
+#Cards_section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px 25px;
+  flex-wrap: wrap;
+}
+
+#Cards_section .container {
+  width: 300px;
+  background: #fff;
+  color: #2563eb;
+  border: #2563eb solid 1px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h2{
+    position: relative;
+  }
+  h2 span{
+    background-color: #888888a9;
+  }
+}
+
+#Cards_section .container .img_div,
+#Cards_section .container h2,
+#Cards_section .container p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#Cards_section .container h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#Cards_section .container .p_description {
+  padding: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.img_div {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: #2563eb solid 1px;
+  overflow: hidden;
+}
+
+.rounded_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delete_p {
+  border: #b64343 solid 1px;
+  border-radius: 50%;
+  color: #b64343;
+  align-self: flex-end;
+  padding: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+.functions_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.edit_a {
+  height: fit-content;
+}
+
+.delete_p:hover {
+  background-color: red;
+  color: #fff;
+}
+.edit_a{
+  text-decoration: none;
+  
+}
